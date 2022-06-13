@@ -1,6 +1,6 @@
 {
  "name": "@igorkowalczyk/is-firefox",
- "version": "1.0.7",
+ "version": "1.0.8",
  "description": "🦊 Add support for firefox: variant in Tailwind.css ",
  "main": "index.js",
  "scripts": {
@@ -14,7 +14,8 @@
  },
  "keywords": [
   "tailwindcss",
-  "react"
+  "react",
+  "firefox"
  ],
  "author": "Igor Kowalczyk",
  "license": "MIT",

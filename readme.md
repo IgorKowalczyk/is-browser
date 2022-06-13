@@ -1,6 +1,6 @@
 <img width="170" height="170" align="left" style="float: left; margin: 0 10px 0 0; border-radius: 50%;" alt="Tailwindcss" src="https://raw.githubusercontent.com/IgorKowalczyk/is-firefox/main/src/images/logo.svg">
 
-# Is :firefox
+# Is :Firefox
 
 🦊 Add support for firefox: tag in Tailwind.css
 <br><br><br>
@@ -23,6 +23,7 @@ pnpm add @igorkowalczyk/is-firefox
 
 ```jsx
 import isFirefox from '@igorkowalczyk/is-firefox';
+
 ...
 
 return (
@@ -30,6 +31,7 @@ return (
   <p>On firefox background should be red, on other browsers it should be blue</p>
  </div>
 )
+
 ...
 
 ```

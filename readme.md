@@ -19,8 +19,6 @@ pnpm add @igorkowalczyk/is-firefox
 
 ## 📦 Examples
 
-**No Config**
-
 ```jsx
 import isFirefox from '@igorkowalczyk/is-firefox';
 

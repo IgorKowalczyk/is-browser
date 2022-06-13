@@ -1,5 +1,5 @@
 {
- "name": "is-firefox",
+ "name": "@igorkowalczyk/is-firefox",
  "version": "1.0.4",
  "description": "🦊 Add support for firefox: tag in Tailwind.css ",
  "main": "index.js",

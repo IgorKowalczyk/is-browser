@@ -16,8 +16,8 @@ jobs:
           node-version: 16
       - run: npm install
       - run: |
-          echo @igorkowalczyk:https://npm.pkg.github.com/ > build/.npmrc
-          echo '//npm.pkg.github.com/:_authToken=${NPM_TOKEN}' >> build/.npmrc
+          echo @igorkowalczyk:https://npm.pkg.github.com/ > .npmrc
+          echo '//npm.pkg.github.com/:_authToken=${NPM_TOKEN}' >> .npmrc
       - run: npm publish --access public
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN_GITHUB }}

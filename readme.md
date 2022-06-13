@@ -2,7 +2,7 @@
 
 # Is :Firefox
 
-🦊 🦊 Add support for `firefox:` variant in Tailwind.css 
+🦊 Add support for `firefox:` variant in Tailwind.css 
 <br><br><br>
 
 ---

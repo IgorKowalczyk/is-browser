@@ -1,4 +1,4 @@
-name: Publish NPM
+name: Publish [NPM, Github]
 on:
  release:
   types: [created]
@@ -20,5 +20,11 @@ jobs:
       echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}' >> .npmrc
    - run: npm publish --access public
      env:
-      NPM_TOKEN: ${{ secrets.NPM_TOKEN_GITHUB }}
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+   - run: |
+      echo @igorkowalczyk:https://npm.pkg.github.com/ > .npmrc
+      echo '//npm.pkg.github.com/:_authToken=${GH_TOKEN}' >> .npmrc
+   - run: npm publish --access public
+     env:
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
 

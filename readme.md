@@ -9,7 +9,7 @@
 
 ## 📥 Installation
 
-**Node.js v7.7.3 or newer is required**.
+**Tailwind.css v3 or newer is required**.
 
 ```
 npm install @igorkowalczyk/is-firefox
@@ -17,29 +17,25 @@ yarn add @igorkowalczyk/is-firefox
 pnpm add @igorkowalczyk/is-firefox
 ```
 
-## 📦 Examples
+## 📦 Usage
 
+Add to `plugins` in your **tailwind.config.js**:
 
-#### In [Tailwind.css config](https://tailwindcss.com/docs/configuration)
 ```js
-plugins: [
- ...
- require("@igorkowalczyk/is-firefox")
- ...
-]
+module.exports = {
+  // ...
+  plugins: [
+    require("@igorkowalczyk/is-firefox"),
+    // ...other plugins.
+  ],
+};
 
 ```
-#### In `.jsx` file
+Style your components using `firefox:{class}`, e.g. `firefox:bg-red-100`, `firefox:bg-blue-100`, etc.
 ```jsx
-...
-
-return (
  <div className="firefox:bg-red-100 bg-blue-100">
   <p>On firefox background should be red, on other browsers it should be blue</p>
  </div>
-)
-
-...
 ```
 
 ## ⁉️ Issues

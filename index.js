@@ -1,4 +1,4 @@
-import { plugin } from "tailwindcss/plugin";
+const plugin = require("tailwindcss/plugin");
 
 module.exports = plugin(function ({ addVariant, e, postcss }) {
  addVariant("firefox", ({ container, separator }) => {

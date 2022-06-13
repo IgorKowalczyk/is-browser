@@ -14,8 +14,11 @@ jobs:
    - uses: actions/setup-node@v2
      with:
       node-version: 16
-      registry-url: 'https://registry.npmjs.org'
    - run: npm install
+   - run: |
+      echo @igorkowalczyk:https://registry.npmjs.org/ > .npmrc
+      echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}' >> .npmrc
    - run: npm publish --access public
      env:
-      NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN_GITHUB }}
+

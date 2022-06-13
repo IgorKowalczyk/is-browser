@@ -12,4 +12,4 @@ module.exports = plugin(function ({ addVariant, e, postcss }) {
    rule.selector = `.${e(`firefox${separator}${rule.selector.slice(1)}`)}`;
   });
  });
-})
+});

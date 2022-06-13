@@ -2,7 +2,7 @@
 
 # Is :Firefox
 
-🦊 Add support for `firefox:` variant in Tailwind.css 
+🦊 Add support for `firefox:` variant in Tailwind.css
 <br><br><br>
 
 ---
@@ -23,19 +23,20 @@ Add to `plugins` in your **tailwind.config.js**:
 
 ```js
 module.exports = {
-  // ...
-  plugins: [
-    require("@igorkowalczyk/is-firefox"),
-    // ...other plugins.
-  ],
+ // ...
+ plugins: [
+  require("@igorkowalczyk/is-firefox"),
+  // ...other plugins.
+ ],
 };
-
 ```
+
 Style your components using `firefox:{class}`, e.g. `firefox:bg-red-100`, `firefox:bg-blue-100`, etc.
+
 ```jsx
- <div className="firefox:bg-red-100 bg-blue-100">
-  <p>On firefox background should be red, on other browsers it should be blue</p>
- </div>
+<div className="firefox:bg-red-100 bg-blue-100">
+ <p>On firefox background should be red, on other browsers it should be blue</p>
+</div>
 ```
 
 ## ⁉️ Issues

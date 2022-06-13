@@ -2,7 +2,7 @@
 
 # Is :Firefox
 
-🦊 Add support for firefox: tag in Tailwind.css
+🦊 🦊 Add support for `firefox:` variant in Tailwind.css 
 <br><br><br>
 
 ---
@@ -19,9 +19,18 @@ pnpm add @igorkowalczyk/is-firefox
 
 ## 📦 Examples
 
-```jsx
-import isFirefox from '@igorkowalczyk/is-firefox';
 
+#### In [Tailwind.css config](https://tailwindcss.com/docs/configuration)
+```js
+plugins: [
+ ...
+ require("@igorkowalczyk/is-firefox")
+ ...
+]
+
+```
+#### In `.jsx` file
+```jsx
 ...
 
 return (
@@ -31,7 +40,6 @@ return (
 )
 
 ...
-
 ```
 
 ## ⁉️ Issues

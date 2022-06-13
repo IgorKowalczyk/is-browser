@@ -1,8 +1,9 @@
 {
  "name": "@igorkowalczyk/is-firefox",
- "version": "1.0.4",
- "description": "🦊 Add support for firefox: tag in Tailwind.css ",
+ "version": "1.0.5",
+ "description": "🦊 Add support for firefox: variant in Tailwind.css ",
  "main": "index.js",
+ "type": "module",
  "scripts": {
   "format": "prettier --write . --ignore-unknown",
   "format:check": "prettier --check .",

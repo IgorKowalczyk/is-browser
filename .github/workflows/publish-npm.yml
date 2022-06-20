@@ -16,8 +16,8 @@ jobs:
       node-version: 16
    - run: npm install
    - run: |
-      rm -f -- .npmrc
-      echo //registry.npmjs.org/:_authToken=${NPM_TOKEN} > .npmrc
+      rm -f -- ~/.npmrc
+      echo //registry.npmjs.org/:_authToken=${NPM_TOKEN} > ~/.npmrc
    - run: npm publish --access public
      env:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

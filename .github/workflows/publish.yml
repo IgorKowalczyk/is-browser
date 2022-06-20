@@ -16,13 +16,13 @@ jobs:
       node-version: 16
    - run: npm install
    - run: |
-      rm .npmrc
+      rm -f -- .npmrc
       echo //registry.npmjs.org/:_authToken=${NPM_TOKEN} > .npmrc
    - run: npm publish --access public
      env:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
    - run: |
-      rm .npmrc
+      rm -f -- .npmrc
       echo //npm.pkg.github.com/:_authToken=${GH_TOKEN} > .npmrc
    - run: npm publish --access public
      env:

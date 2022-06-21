@@ -17,3 +17,4 @@
  "vueIndentScriptAndStyle": false,
  "plugins": ["prettier-plugin-tailwindcss"]
 }
+

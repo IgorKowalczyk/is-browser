@@ -39,7 +39,11 @@ Style your components using `{browser_name}:{class}`, e.g. `firefox:bg-red-100`,
 </div>
 ```
 
-## Supported browsers
+## 🔐 Supported browsers
+| Browser | Browser Version(s) | Variant | CSS Property |
+| --- | --- | --- | --- |
+| Firefox | `1.5 – 61` | `firefox:` | `@-moz-document url-prefix()` |
+| Firefox | `2.0+` | `moz-gecko:` | `-moz-appearance` |
 
 ## ⁉️ Issues
 

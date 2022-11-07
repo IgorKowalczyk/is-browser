@@ -2,9 +2,9 @@ name: Prettier check
 
 on:
  push:
-  branches: [master]
+  branches: [main]
  pull_request:
-  branches: [master]
+  branches: [main]
 
 jobs:
  check:
@@ -17,8 +17,13 @@ jobs:
     node: ["16.x"]
   steps:
    - name: 🧱 Checkout repository
-     uses: actions/checkout@v2
+     uses: actions/checkout@v3
+   - name: 🔩 Setup Node
+     uses: actions/setup-node@v3
+     with:
+      node-version: 16
+      cache: "npm"
    - name: 🚀 Install dependencies
-     run: npm i prettier@2.6.2 --no-package-lock --legacy-peer-deps
+     run: npm i --legacy-peer-deps
    - name: 🚀 Check formatting
      run: "npm run format:check"

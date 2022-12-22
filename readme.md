@@ -43,7 +43,7 @@ Style your components using `{browser_name}:{class}`, e.g. `firefox:bg-red-100`,
 
 | Browser | Browser Version(s) | Variant    | CSS Property                  |
 | ------- | ------------------ | ---------- | ----------------------------- |
-| Firefox | `1.5 – 61`         | `firefox:` | `@-moz-document url-prefix()` |
+| Firefox | `All (Gecko)`      | `firefox:` | `@-moz-document url-prefix()` |
 
 ## ⁉️ Issues
 

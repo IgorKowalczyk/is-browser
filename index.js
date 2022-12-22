@@ -1,5 +1,5 @@
-const plugin = require("tailwindcss/plugin");
+import plugin from "tailwindcss/plugin";
 
-module.exports = plugin(function ({ addVariant }) {
+export default plugin(function ({ addVariant }) {
  addVariant("firefox", "@-moz-document url-prefix()");
 });

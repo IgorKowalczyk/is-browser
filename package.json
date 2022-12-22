@@ -1,12 +1,12 @@
 {
  "name": "@igorkowalczyk/is-browser",
- "version": "2.1.1",
+ "version": "2.1.2",
  "description": "🏔️ Add support for browser specific variants in Tailwind.css",
  "main": "dist/index.cjs",
  "scripts": {
   "format": "prettier --write . --ignore-unknown",
   "format:check": "prettier --check .",
-  "build": "esbuild index.js --bundle --format=cjs --platform=browser --target=es2019 --pure:React.createElement --minify --outfile=dist/index.cjs",
+  "build": "esbuild index.js --format=cjs --platform=node --minify --outfile=dist/index.cjs",
   "test": "echo \"Error: no test specified\" && exit 1"
  },
  "repository": {

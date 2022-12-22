@@ -1,12 +1,12 @@
 {
  "name": "@igorkowalczyk/is-browser",
- "version": "2.0.1",
+ "version": "2.1.0",
  "description": "🏔️ Add support for browser specific variants in Tailwind.css",
- "main": "index.js",
- "type": "module",
+ "main": "dist/index.cjs",
  "scripts": {
   "format": "prettier --write . --ignore-unknown",
   "format:check": "prettier --check .",
+  "build": "esbuild index.js --bundle --platform=node --minify --target=node14 --outfile=dist/index.cjs",
   "test": "echo \"Error: no test specified\" && exit 1"
  },
  "repository": {
@@ -21,6 +21,9 @@
  ],
  "author": "Igor Kowalczyk",
  "license": "MIT",
+ "engines": {
+  "node": ">=10"
+ },
  "bugs": {
   "url": "https://github.com/IgorKowalczyk/is-browser/issues"
  },
@@ -28,13 +31,18 @@
  "devDependencies": {
   "prettier": "^2.8.1",
   "prettier-plugin-tailwindcss": "^0.2.1",
-  "tailwindcss": "^3.2.4"
+  "tailwindcss": "^3.2.4",
+  "esbuild": "0.16.10"
  },
  "peerDependencies": {
   "tailwindcss": "^3.0"
  },
  "files": [
-  "index.js"
+  "README.md",
+  "dist"
  ],
+ "exports": {
+  "require": "./dist/index.cjs"
+ },
  "packageManager": "pnpm@7.19.0"
 }

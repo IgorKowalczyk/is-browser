@@ -29,6 +29,8 @@ jobs:
       cache: "pnpm"
    - name: 🚀 Install dependencies
      run: pnpm install
+   - name: 🚀 Build package
+     run: pnpm build
    - name: 🚀 Publish package
      run: pnpm publish --access public --publish-branch ${{ github.head_ref }} --no-git-checks
      env:

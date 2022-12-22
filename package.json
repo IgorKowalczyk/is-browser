@@ -6,7 +6,7 @@
  "scripts": {
   "format": "prettier --write . --ignore-unknown",
   "format:check": "prettier --check .",
-  "build": "esbuild index.js --bundle --platform=node --minify --target=node14 --outfile=dist/index.cjs",
+  "build": "esbuild index.js --bundle --format=cjs --platform=node --target=node16 --minify --outfile=dist/index.cjs",
   "test": "echo \"Error: no test specified\" && exit 1"
  },
  "repository": {
@@ -21,6 +21,7 @@
  ],
  "author": "Igor Kowalczyk",
  "license": "MIT",
+ "sideEffects": false,
  "engines": {
   "node": ">=10"
  },

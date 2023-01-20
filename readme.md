@@ -31,7 +31,7 @@ module.exports = {
 };
 ```
 
-Style your components using `{browser_name}:{class}`, e.g. `firefox:bg-red-100`, `firefox:bg-blue-100`, etc.
+Style your components using `{browser_name}:{class}`, e.g. `firefox:bg-red-100`, `chrome:bg-blue-100`, etc.
 
 ```jsx
 <div className="firefox:bg-red-100 bg-blue-100">
@@ -41,9 +41,11 @@ Style your components using `{browser_name}:{class}`, e.g. `firefox:bg-red-100`,
 
 ## 🔐 Supported browsers
 
-| Browser | Browser Version(s) | Variant    | CSS Property                  |
-| ------- | ------------------ | ---------- | ----------------------------- |
-| Firefox | `All (Gecko)`      | `firefox:` | `@-moz-document url-prefix()` |
+| Browser | Variant    | CSS Property                         | Example                 |
+| ------- | ---------- | ------------------------------------ | ----------------------- |
+| Firefox | `firefox:` | `-moz-appearance: none`              | `firefox:bg-yellow-400` |
+| Chrome  | `chrome:`  | `background: -webkit-named-image(i)` | `chrome:bg-red-400`     |
+| Safari  | `safari:`  | `-webkit-app-region: inherit`        | `safari:bg-blue-400`    |
 
 ## ⁉️ Issues
 

@@ -34,8 +34,8 @@ module.exports = {
 Style your components using `{browser_name}:{class}`, e.g. `firefox:bg-red-100`, `chrome:bg-blue-100`, etc.
 
 ```jsx
-<div className="firefox:bg-red-100 bg-blue-100">
- <p>On firefox background should be red, on other browsers it should be blue</p>
+<div className="firefox:bg-red-400 chrome:bg-blue-400 bg-yellow-400">
+ <p>On firefox background should be red, on chrome should be blue and on other browsers it should be yellow</p>
 </div>
 ```
 

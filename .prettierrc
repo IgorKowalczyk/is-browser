@@ -11,5 +11,6 @@
  "singleQuote": false,
  "tabWidth": 1,
  "trailingComma": "es5",
- "useTabs": false
+ "useTabs": false,
+ "plugins": ["prettier-plugin-tailwindcss"]
 }

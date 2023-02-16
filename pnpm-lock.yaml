@@ -6,7 +6,7 @@ specifiers:
   eslint-config-prettier: ^8.6.0
   prettier: 2.8.4
   prettier-plugin-tailwindcss: 0.2.3
-  tailwindcss: 3.2.6
+  tailwindcss: 3.2.7
 
 devDependencies:
   esbuild: 0.17.8
@@ -14,7 +14,7 @@ devDependencies:
   eslint-config-prettier: 8.6.0_eslint@8.32.0
   prettier: 2.8.4
   prettier-plugin-tailwindcss: 0.2.3_prettier@2.8.4
-  tailwindcss: 3.2.6
+  tailwindcss: 3.2.7
 
 packages:
 
@@ -1226,8 +1226,8 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /tailwindcss/3.2.6:
-    resolution: {integrity: sha512-BfgQWZrtqowOQMC2bwaSNe7xcIjdDEgixWGYOd6AL0CbKHJlvhfdbINeAW76l1sO+1ov/MJ93ODJ9yluRituIw==}
+  /tailwindcss/3.2.7:
+    resolution: {integrity: sha512-B6DLqJzc21x7wntlH/GsZwEXTBttVSl1FtCzC8WP4oBc/NKef7kaax5jeihkkCEWc831/5NDJ9gRNDK6NEioQQ==}
     engines: {node: '>=12.13.0'}
     hasBin: true
     dependencies:

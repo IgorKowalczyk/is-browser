@@ -1,10 +1,10 @@
-name: Prettier check
+name: Lint
 
 on: [push, pull_request]
 
 jobs:
- check:
-  name: Check Format
+ lint:
+  name: ESLint
   runs-on: ubuntu-latest
   strategy:
    fail-fast: false
@@ -25,5 +25,5 @@ jobs:
       cache: "pnpm"
    - name: 🚀 Install dependencies
      run: pnpm install
-   - name: 🚀 Check formatting
-     run: "pnpm run format:check"
+   - name: 🚀 Run ESLint
+     run: pnpm lint

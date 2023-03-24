@@ -48,5 +48,5 @@
   "exports": {
     "require": "./dist/index.cjs"
   },
-  "packageManager": "pnpm@7.30.1"
+  "packageManager": "pnpm@7.30.2"
 }

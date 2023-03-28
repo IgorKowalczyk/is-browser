@@ -1,6 +1,6 @@
 {
   "name": "@igorkowalczyk/is-browser",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "🏔️ Add support for browser specific variants in Tailwind.css",
   "main": "dist/index.cjs",
   "scripts": {

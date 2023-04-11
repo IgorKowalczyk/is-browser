@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/IgorKowalczyk/is-browser#readme",
   "devDependencies": {
-    "@igorkowalczyk/eslint-config": "1.1.0",
+    "@igorkowalczyk/eslint-config": "1.2.0",
     "@igorkowalczyk/prettier-config": "1.2.0",
     "esbuild": "0.17.16",
     "eslint": "8.38.0",

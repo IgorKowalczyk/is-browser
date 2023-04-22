@@ -33,7 +33,7 @@
     "@igorkowalczyk/eslint-config": "1.2.0",
     "@igorkowalczyk/prettier-config": "1.2.0",
     "esbuild": "0.17.17",
-    "eslint": "8.38.0",
+    "eslint": "8.39.0",
     "prettier": "2.8.7",
     "prettier-plugin-tailwindcss": "0.2.7",
     "tailwindcss": "3.3.1"

@@ -9,18 +9,19 @@ jobs:
   permissions:
    contents: read
    packages: write
+   id-token: write
   strategy:
    fail-fast: false
    matrix:
     language: ["javascript"]
-    node: ["16.x"]
+    node: ["18.x"]
   steps:
    - name: 🧱 Checkout repository
      uses: actions/checkout@v3
    - name: 🔩 Setup PNPM
      uses: pnpm/action-setup@v2
      with:
-      version: 7
+      version: latest
    - name: 🔩 Setup Node ${{ matrix.node }}
      uses: actions/setup-node@v3
      with:
@@ -32,6 +33,6 @@ jobs:
    - name: 🚀 Build package
      run: pnpm build
    - name: 🚀 Publish package
-     run: pnpm publish --access public --publish-branch ${{ github.head_ref }} --no-git-checks
+     run: pnpm publish --access public --publish-branch ${{ github.head_ref }} --no-git-checks --provenance
      env:
       NODE_AUTH_TOKEN: ${{ secrets.GH_TOKEN }}

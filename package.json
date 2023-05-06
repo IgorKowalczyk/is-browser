@@ -5,7 +5,7 @@
   "author": "Igor Kowalczyk",
   "license": "MIT",
   "sideEffects": false,
-  "repository": "https://github.com/igorkowalczyk/is-browser.git",
+  "repository": "IgorKowalczyk/is-browser",
   "bugs": "https://github.com/IgorKowalczyk/is-browser/issues",
   "homepage": "https://github.com/IgorKowalczyk/is-browser#readme",
   "main": "dist/index.cjs",

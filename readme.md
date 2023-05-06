@@ -1,9 +1,11 @@
-<img width="170" height="170" align="left" style="float: left; margin: 0 10px 0 0; border-radius: 50%;" alt="Tailwindcss" src="https://raw.githubusercontent.com/IgorKowalczyk/is-browser/main/src/images/logo.svg">
+<img width="170" height="170" align="left" style="float: left; margin: 0 10px 0 0; border-radius: 50%;" alt="Tailwindcss logo" src="https://raw.githubusercontent.com/IgorKowalczyk/is-browser/main/src/images/logo.svg">
 
-# Tailwind is `:browser`
+# TailwindCSS is `:browser`
 
 🏔️ Add support for browser specific variants in Tailwind.css
-<br><br><br>
+
+[![GitHub License](https://img.shields.io/github/license/igorkowalczyk/is-browser?color=%2334D058&logo=github&style=flat-square&label=License)](https://github.com/igorkowalczyk/is-browser/blob/main/license.md)
+[![NPM Version](https://img.shields.io/npm/v/%40igorkowalczyk%2Fis-browser/latest.svg?logo=npm&logoColor=fff&style=flat-square&color=%2334D058)](https://npmjs.com/package/@igorkowalczyk/is-browser) [![NPM Downloads](https://img.shields.io/npm/dw/@igorkowalczyk/is-browser?logo=npm&logoColor=fff&style=flat-square&color=%2334D058&label=Downloads)](https://npmjs.com/package/@igorkowalczyk/is-browser)
 
 ---
 
@@ -56,9 +58,9 @@ If you have any issues with the page please create [new issue here](https://gith
 When submitting a pull request:
 
 - Clone the repo.
-- Create a branch off of master and give it a meaningful name (e.g. my-awesome-new-feature).
+- Create a branch off of `main` and give it a meaningful name (e.g. `my-awesome-new-feature`).
 - Open a [pull request](https://github.com/igorkowalczyk/is-browser/pulls) on [GitHub](https://github.com) and describe the feature or fix.
 
 ## 📋 License
 
-This project is licensed under the MIT. See the [LICENSE](https://github.com/igorkowalczyk/is-browser/blob/master/license.md) file for details
+This project is licensed under the MIT. See the [LICENSE](https://github.com/igorkowalczyk/is-browser/blob/main/license.md) file for details

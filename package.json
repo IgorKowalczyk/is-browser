@@ -28,7 +28,7 @@
     "@igorkowalczyk/eslint-config": "1.3.2",
     "@igorkowalczyk/prettier-config": "1.3.2",
     "esbuild": "0.17.19",
-    "eslint": "8.40.0",
+    "eslint": "8.41.0",
     "prettier": "2.8.8",
     "prettier-plugin-tailwindcss": "0.3.0",
     "tailwindcss": "3.3.2"

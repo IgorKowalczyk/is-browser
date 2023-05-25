@@ -26,7 +26,7 @@
     "node": ">=10"
   },
   "devDependencies": {
-    "@igorkowalczyk/eslint-config": "1.3.2",
+    "@igorkowalczyk/eslint-config": "1.4.0",
     "@igorkowalczyk/prettier-config": "1.4.0",
     "esbuild": "0.17.19",
     "eslint": "8.41.0",

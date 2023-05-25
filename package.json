@@ -13,7 +13,8 @@
     "format": "prettier --write . --ignore-unknown --cache",
     "format:check": "prettier --check . --cache",
     "build": "esbuild index.js --format=cjs --platform=node --minify --outfile=dist/index.cjs",
-    "lint": "eslint . --ext .js,.ts"
+    "lint": "eslint . --ext .js,.ts",
+    "lint:fix": "eslint . --ext .js,.ts --fix"
   },
   "keywords": [
     "tailwindcss",

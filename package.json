@@ -9,10 +9,21 @@
   "bugs": "https://github.com/IgorKowalczyk/is-browser/issues",
   "homepage": "https://github.com/IgorKowalczyk/is-browser#readme",
   "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "import": "./dist/index.mjs"
+  },
+  "files": [
+    "README.md",
+    "dist"
+  ],
   "scripts": {
     "format": "prettier --write . --ignore-unknown --cache",
     "format:check": "prettier --check . --cache",
-    "build": "esbuild index.js --format=cjs --platform=node --minify --outfile=dist/index.cjs",
+    "build:esm": "esbuild index.js --platform=node --format=esm --minify --outfile=dist/index.mjs",
+    "build:cjs": "esbuild index.js --format=cjs --platform=node --minify --outfile=dist/index.cjs",
+    "build": "pnpm run build:esm && pnpm run build:cjs",
     "lint": "eslint . --ext .js,.ts",
     "lint:fix": "eslint . --ext .js,.ts --fix"
   },
@@ -23,7 +34,7 @@
     "chrome"
   ],
   "engines": {
-    "node": ">=10"
+    "node": ">=16"
   },
   "devDependencies": {
     "@igorkowalczyk/eslint-config": "1.3.2",
@@ -31,18 +42,10 @@
     "esbuild": "0.17.19",
     "eslint": "8.41.0",
     "prettier": "2.8.8",
-    "prettier-plugin-tailwindcss": "0.3.0",
     "tailwindcss": "3.3.2"
   },
   "peerDependencies": {
     "tailwindcss": ">=3.0.0"
-  },
-  "files": [
-    "README.md",
-    "dist"
-  ],
-  "exports": {
-    "require": "./dist/index.cjs"
   },
   "packageManager": "pnpm@8.5.1"
 }

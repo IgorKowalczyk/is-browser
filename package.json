@@ -10,9 +10,12 @@
   "homepage": "https://github.com/IgorKowalczyk/is-browser#readme",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
+
   "exports": {
-    "require": "./dist/index.cjs",
-    "import": "./dist/index.mjs"
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
   },
   "files": [
     "README.md",
@@ -22,7 +25,7 @@
     "format": "prettier --write . --ignore-unknown --cache",
     "format:check": "prettier --check . --cache",
     "build:esm": "esbuild index.js --platform=node --format=esm --minify --outfile=dist/index.mjs",
-    "build:cjs": "esbuild index.js --format=cjs --platform=node --minify --outfile=dist/index.cjs",
+    "build:cjs": "esbuild index.js --platform=node --format=cjs --minify --outfile=dist/index.cjs",
     "build": "pnpm run build:esm && pnpm run build:cjs",
     "lint": "eslint . --ext .js,.ts",
     "lint:fix": "eslint . --ext .js,.ts --fix"

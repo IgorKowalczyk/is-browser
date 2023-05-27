@@ -23,8 +23,8 @@
   "scripts": {
     "format": "prettier --write . --ignore-unknown --cache",
     "format:check": "prettier --check . --cache",
-    "build:esm": "esbuild index.mjs --platform=node --format=esm --minify --outfile=dist/index.mjs",
-    "build:cjs": "esbuild index.cjs --platform=node --format=cjs --minify --outfile=dist/index.js",
+    "build:esm": "esbuild src/source.mjs --platform=node --format=esm --minify --outfile=dist/index.mjs",
+    "build:cjs": "esbuild src/source.cjs --platform=node --format=cjs --minify --outfile=dist/index.js",
     "build": "pnpm run build:esm && pnpm run build:cjs",
     "lint": "eslint . --ext .js,.ts",
     "lint:fix": "eslint . --ext .js,.ts --fix"

@@ -1,19 +1,18 @@
 {
   "name": "@igorkowalczyk/is-browser",
   "description": "🏔️ Add support for browser specific variants in Tailwind.css",
-  "version": "4.0.2",
+  "version": "4.0.3",
   "author": "Igor Kowalczyk",
   "license": "MIT",
   "sideEffects": false,
   "repository": "IgorKowalczyk/is-browser",
   "bugs": "https://github.com/IgorKowalczyk/is-browser/issues",
   "homepage": "https://github.com/IgorKowalczyk/is-browser#readme",
-  "main": "dist/index.cjs",
+  "main": "dist/index.js",
   "module": "dist/index.mjs",
-
   "exports": {
     ".": {
-      "require": "./dist/index.cjs",
+      "require": "./dist/index.js",
       "import": "./dist/index.mjs"
     }
   },
@@ -24,8 +23,8 @@
   "scripts": {
     "format": "prettier --write . --ignore-unknown --cache",
     "format:check": "prettier --check . --cache",
-    "build:esm": "esbuild index.js --platform=node --format=esm --minify --outfile=dist/index.mjs",
-    "build:cjs": "esbuild index.js --platform=node --format=cjs --minify --outfile=dist/index.cjs",
+    "build:esm": "esbuild index.mjs --platform=node --format=esm --minify --outfile=dist/index.mjs",
+    "build:cjs": "esbuild index.cjs --platform=node --format=cjs --minify --outfile=dist/index.js",
     "build": "pnpm run build:esm && pnpm run build:cjs",
     "lint": "eslint . --ext .js,.ts",
     "lint:fix": "eslint . --ext .js,.ts --fix"

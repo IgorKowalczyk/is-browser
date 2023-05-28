@@ -50,5 +50,5 @@
   "peerDependencies": {
     "tailwindcss": ">=3.0.0"
   },
-  "packageManager": "pnpm@8.5.1"
+  "packageManager": "pnpm@8.6.0"
 }

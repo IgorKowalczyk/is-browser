@@ -40,7 +40,7 @@
     "node": ">=16"
   },
   "devDependencies": {
-    "@igorkowalczyk/eslint-config": "1.4.0",
+    "@igorkowalczyk/eslint-config": "1.4.1",
     "@igorkowalczyk/prettier-config": "1.4.1",
     "esbuild": "0.18.10",
     "eslint": "8.43.0",

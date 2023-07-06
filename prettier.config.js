@@ -1,5 +1,5 @@
-/* eslint-disable global-require */
+import config from "@igorkowalczyk/prettier-config";
 
-module.exports = {
- ...require("@igorkowalczyk/prettier-config"),
+export default {
+ ...config,
 };

@@ -1,34 +1,40 @@
 {
   "name": "@igorkowalczyk/is-browser",
   "description": "🏔️ Add support for browser specific variants in Tailwind.css",
-  "version": "4.0.3",
+  "version": "5.0.0",
   "author": "Igor Kowalczyk",
   "license": "MIT",
   "sideEffects": false,
   "repository": "IgorKowalczyk/is-browser",
   "bugs": "https://github.com/IgorKowalczyk/is-browser/issues",
   "homepage": "https://github.com/IgorKowalczyk/is-browser#readme",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
+  "type": "module",
   "exports": {
-    ".": {
-      "require": "./dist/index.js",
-      "import": "./dist/index.mjs"
-    }
+    "import": "./dist/mjs/index.js",
+    "require": "./dist/cjs/index.cjs"
+  },
+  "scripts": {
+    "format": "prettier --write . --ignore-unknown --cache",
+    "format:check": "prettier --check . --cache",
+    "build": "rollup -c",
+    "lint": "eslint . --ext .js,.ts",
+    "lint:fix": "eslint . --ext .js,.ts --fix"
+  },
+  "devDependencies": {
+    "@igorkowalczyk/eslint-config": "1.5.2",
+    "@igorkowalczyk/prettier-config": "1.5.2",
+    "eslint": "8.44.0",
+    "prettier": "3.0.0",
+    "rollup": "3.26.2",
+    "tailwindcss": "3.3.2"
+  },
+  "peerDependencies": {
+    "tailwindcss": ">=3.0.0"
   },
   "files": [
     "README.md",
     "dist"
   ],
-  "scripts": {
-    "format": "prettier --write . --ignore-unknown --cache",
-    "format:check": "prettier --check . --cache",
-    "build:esm": "esbuild src/source.mjs --platform=node --format=esm --minify --outfile=dist/index.mjs",
-    "build:cjs": "esbuild src/source.cjs --platform=node --format=cjs --minify --outfile=dist/index.js",
-    "build": "pnpm run build:esm && pnpm run build:cjs",
-    "lint": "eslint . --ext .js,.ts",
-    "lint:fix": "eslint . --ext .js,.ts --fix"
-  },
   "keywords": [
     "tailwindcss",
     "react",
@@ -38,17 +44,6 @@
   ],
   "engines": {
     "node": ">=16"
-  },
-  "devDependencies": {
-    "@igorkowalczyk/eslint-config": "1.4.2",
-    "@igorkowalczyk/prettier-config": "1.4.2",
-    "esbuild": "0.18.11",
-    "eslint": "8.44.0",
-    "prettier": "3.0.0",
-    "tailwindcss": "3.3.2"
-  },
-  "peerDependencies": {
-    "tailwindcss": ">=3.0.0"
   },
   "packageManager": "pnpm@8.6.6"
 }

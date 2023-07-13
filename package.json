@@ -14,9 +14,9 @@
     "require": "./dist/cjs/index.cjs"
   },
   "scripts": {
-    "format": "prettier --write . --ignore-unknown --cache",
-    "format:check": "prettier --check . --cache",
     "build": "rollup -c",
+    "format": "prettier . --write --ignore-unknown --cache",
+    "format:check": "prettier . --check --cache",
     "lint": "eslint . --ext .js,.ts",
     "lint:fix": "eslint . --ext .js,.ts --fix"
   },

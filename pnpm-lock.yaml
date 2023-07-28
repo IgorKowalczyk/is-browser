@@ -18,8 +18,8 @@ devDependencies:
     specifier: 3.0.0
     version: 3.0.0
   rollup:
-    specifier: 3.26.3
-    version: 3.26.3
+    specifier: 3.27.0
+    version: 3.27.0
   tailwindcss:
     specifier: 3.3.3
     version: 3.3.3
@@ -1618,8 +1618,8 @@ packages:
       glob: 7.2.3
     dev: true
 
-  /rollup@3.26.3:
-    resolution: {integrity: sha512-7Tin0C8l86TkpcMtXvQu6saWH93nhG3dGQ1/+l5V2TDMceTxO7kDiK6GzbfLWNNxqJXm591PcEZUozZm51ogwQ==}
+  /rollup@3.27.0:
+    resolution: {integrity: sha512-aOltLCrYZ0FhJDm7fCqwTjIUEVjWjcydKBV/Zeid6Mn8BWgDCUBBWT5beM5ieForYNo/1ZHuGJdka26kvQ3Gzg==}
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:

@@ -1,7 +1,7 @@
 {
   "name": "@igorkowalczyk/is-browser",
   "description": "🏔️ Add support for browser specific variants in Tailwind.css",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "author": "Igor Kowalczyk",
   "license": "MIT",
   "sideEffects": false,
@@ -21,8 +21,8 @@
     "lint:fix": "eslint . --ext .js,.ts --fix"
   },
   "devDependencies": {
-    "@igorkowalczyk/eslint-config": "1.5.4",
-    "@igorkowalczyk/prettier-config": "1.5.4",
+    "@igorkowalczyk/eslint-config": "1.5.5",
+    "@igorkowalczyk/prettier-config": "1.5.5",
     "eslint": "8.47.0",
     "prettier": "3.0.1",
     "rollup": "3.28.0",

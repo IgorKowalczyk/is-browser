@@ -24,7 +24,7 @@
     "@igorkowalczyk/eslint-config": "1.5.5",
     "@igorkowalczyk/prettier-config": "1.5.5",
     "eslint": "8.47.0",
-    "prettier": "3.0.1",
+    "prettier": "3.0.2",
     "rollup": "3.28.0",
     "tailwindcss": "3.3.3"
   },

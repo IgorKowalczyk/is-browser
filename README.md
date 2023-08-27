@@ -1,11 +1,15 @@
-<img width="170" height="170" align="left" style="float: left; margin: 0 10px 0 0; border-radius: 50%;" alt="Tailwindcss logo" src="https://raw.githubusercontent.com/IgorKowalczyk/is-browser/main/src/images/logo.svg">
-
-# TailwindCSS is `:browser`
-
-🏔️ Add support for browser specific variants in Tailwind.css
-
-[![GitHub License](https://img.shields.io/github/license/igorkowalczyk/is-browser?color=%2334D058&logo=github&style=flat-square&label=License)](https://github.com/igorkowalczyk/is-browser/blob/main/license.md)
-[![NPM Version](https://img.shields.io/npm/v/%40igorkowalczyk%2Fis-browser/latest.svg?logo=npm&logoColor=fff&style=flat-square&color=%2334D058)](https://npmjs.com/package/@igorkowalczyk/is-browser) [![NPM Downloads](https://img.shields.io/npm/dw/@igorkowalczyk/is-browser?logo=npm&logoColor=fff&style=flat-square&color=%2334D058&label=Downloads)](https://npmjs.com/package/@igorkowalczyk/is-browser)
+![is-browser](https://github.com/IgorKowalczyk/is-browser/assets/49127376/6a992917-80fd-4268-9f26-29e3740f2588)
+<div align="center">
+ <a aria-label="Github License" href="https://github.com/igorkowalczyk/is-browser/blob/main/license.md">
+  <img src="https://img.shields.io/github/license/igorkowalczyk/is-browser?color=%2334D058&logo=github&style=flat-square&label=License"/>
+ </a>
+ <a aria-label="NPM Version" href="https://npmjs.com/package/@igorkowalczyk/is-browser">
+  <img src="https://img.shields.io/npm/v/%40igorkowalczyk%2Fis-browser/latest.svg?logo=npm&logoColor=fff&style=flat-square&color=%2334D058"/>
+ </a>
+ <a aria-label="NPM Downloads" href="[https://github.com/igorkowalczyk/discord-activity/releases](https://npmjs.com/package/@igorkowalczyk/is-browser)">
+  <img src="https://img.shields.io/npm/dw/@igorkowalczyk/is-browser?logo=npm&logoColor=fff&style=flat-square&color=%2334D058&label=Downloads"/>
+ </a>
+</div>
 
 ---
 

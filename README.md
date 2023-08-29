@@ -1,4 +1,5 @@
 ![is-browser](https://github.com/IgorKowalczyk/is-browser/assets/49127376/6a992917-80fd-4268-9f26-29e3740f2588)
+
 <div align="center">
  <a aria-label="Github License" href="https://github.com/igorkowalczyk/is-browser/blob/main/license.md">
   <img src="https://img.shields.io/github/license/igorkowalczyk/is-browser?color=%2334D058&logo=github&style=flat-square&label=License"/>

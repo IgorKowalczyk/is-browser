@@ -1,4 +1,4 @@
-![is-browser](https://github.com/IgorKowalczyk/is-browser/assets/49127376/6a992917-80fd-4268-9f26-29e3740f2588)
+![Is browser](https://github.com/IgorKowalczyk/is-browser/assets/49127376/6a992917-80fd-4268-9f26-29e3740f2588)
 
 <div align="center">
  <a aria-label="Github License" href="https://github.com/igorkowalczyk/is-browser/blob/main/license.md">
@@ -7,7 +7,7 @@
  <a aria-label="NPM Version" href="https://npmjs.com/package/@igorkowalczyk/is-browser">
   <img src="https://img.shields.io/npm/v/%40igorkowalczyk%2Fis-browser/latest.svg?logo=npm&logoColor=fff&style=flat-square&color=%2334D058"/>
  </a>
- <a aria-label="NPM Downloads" href="[https://github.com/igorkowalczyk/discord-activity/releases](https://npmjs.com/package/@igorkowalczyk/is-browser)">
+ <a aria-label="NPM Downloads" href="https://npmjs.com/package/@igorkowalczyk/is-browser">
   <img src="https://img.shields.io/npm/dw/@igorkowalczyk/is-browser?logo=npm&logoColor=fff&style=flat-square&color=%2334D058&label=Downloads"/>
  </a>
 </div>

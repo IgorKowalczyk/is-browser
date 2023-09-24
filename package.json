@@ -1,11 +1,12 @@
 {
   "name": "@igorkowalczyk/is-browser",
   "description": "🏔️ Add support for browser specific variants in Tailwind.css",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "author": "Igor Kowalczyk",
   "license": "MIT",
   "sideEffects": false,
   "repository": "IgorKowalczyk/is-browser",
+  "funding": "https://github.com/sponsors/igorkowalczyk",
   "bugs": "https://github.com/IgorKowalczyk/is-browser/issues",
   "homepage": "https://github.com/IgorKowalczyk/is-browser#readme",
   "type": "module",
@@ -25,7 +26,7 @@
     "@igorkowalczyk/prettier-config": "1.5.5",
     "eslint": "8.50.0",
     "prettier": "3.0.3",
-    "rollup": "3.29.2",
+    "rollup": "3.29.3",
     "tailwindcss": "3.3.3"
   },
   "peerDependencies": {

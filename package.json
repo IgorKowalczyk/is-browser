@@ -27,7 +27,7 @@
     "eslint": "8.55.0",
     "prettier": "3.1.0",
     "rollup": "4.6.1",
-    "tailwindcss": "3.3.5"
+    "tailwindcss": "3.3.6"
   },
   "peerDependencies": {
     "tailwindcss": ">=3.0.0"

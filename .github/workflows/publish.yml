@@ -39,6 +39,10 @@ jobs:
    - name: 🚀 Install dependencies
      run: pnpm install
 
+     # Build the project
+   - name: 🛠️ Build packages
+     run: pnpm build
+
    # Publish to GitHub Package Registry
    - name: 📦 Publish to GitHub Package Registry
      env:

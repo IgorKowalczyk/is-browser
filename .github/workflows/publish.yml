@@ -1,0 +1,68 @@
+name: Publish packages
+
+on:
+ release:
+  types: [created]
+
+jobs:
+ publish:
+  runs-on: ubuntu-latest
+  permissions:
+   contents: read
+   packages: write
+   id-token: write
+  strategy:
+   fail-fast: false
+   matrix:
+    node: ["lts/*"]
+  steps:
+   # Checkout the repository
+   - name: 🧱 Checkout repository
+     uses: actions/checkout@v4
+
+   # Setup PNPM
+   - name: 🔩 Setup PNPM
+     uses: pnpm/action-setup@v3
+     with:
+      version: next-9
+      standalone: true
+
+   # Setup Node.js
+   - name: 🔩 Setup Node ${{ matrix.node }}
+     uses: actions/setup-node@v4
+     with:
+      node-version: ${{ matrix.node }}
+      always-auth: true
+      cache: "pnpm"
+
+   # Cache dependencies
+   - name: 📦 Cache dependencies
+     uses: actions/cache@v4
+     with:
+      path: ~/.pnpm-store
+      key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+      restore-keys: |
+       ${{ runner.os }}-pnpm-
+
+   # Install dependencies
+   - name: 🚀 Install dependencies
+     run: pnpm install
+
+   - name: 📦 Add Github package registry
+     run: npm config set registry https://npm.pkg.github.com
+
+   - name: 📦 Github package registry authentication
+     run: npm set //npm.pkg.github.com/:_authToken ${{ secrets.GH_TOKEN }}
+
+   - name: 📦 NPM registry authentication
+     run: npm set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
+
+   # Publish package if it's not a pre-release
+   - name: 🚀 Publish package
+     if: github.event.release.prerelease == false
+     run: pnpm publish --access public --no-git-checks --provenance
+
+   # Publish next package if it's a pre-release
+   - name: 🚀 Publish next package
+     if: github.event.release.prerelease == true
+     run: pnpm publish --access public --no-git-checks --provenance --tag next

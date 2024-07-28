@@ -1,7 +1,7 @@
 {
   "name": "@igorkowalczyk/is-browser",
   "description": "🏔️ Add support for browser specific variants in Tailwind.css",
-  "version": "5.0.2",
+  "version": "5.0.3",
   "author": "Igor Kowalczyk",
   "license": "MIT",
   "sideEffects": false,

@@ -48,21 +48,28 @@ jobs:
    - name: 🚀 Install dependencies
      run: pnpm install
 
-   - name: 📦 Add Github package registry
-     run: npm config set registry https://npm.pkg.github.com
+   # Publish to GitHub Package Registry
+   - name: 📦 Publish to GitHub Package Registry
+     env:
+      NODE_AUTH_TOKEN: ${{ secrets.GH_TOKEN }}
+     run: |
+      npm config set registry https://npm.pkg.github.com
+      npm set //npm.pkg.github.com/:_authToken ${{ secrets.GH_TOKEN }}
+      if [ "${{ github.event.release.prerelease }}" = "false" ]; then
+        pnpm publish --access public --no-git-checks --provenance
+      else
+        pnpm publish --access public --no-git-checks --provenance --tag next
+      fi
 
-   - name: 📦 Github package registry authentication
-     run: npm set //npm.pkg.github.com/:_authToken ${{ secrets.GH_TOKEN }}
-
-   - name: 📦 NPM registry authentication
-     run: npm set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
-
-   # Publish package if it's not a pre-release
-   - name: 🚀 Publish package
-     if: github.event.release.prerelease == false
-     run: pnpm publish --access public --no-git-checks --provenance
-
-   # Publish next package if it's a pre-release
-   - name: 🚀 Publish next package
-     if: github.event.release.prerelease == true
-     run: pnpm publish --access public --no-git-checks --provenance --tag next
+   # Publish to NPM Registry
+   - name: 📦 Publish to NPM Registry
+     env:
+      NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+     run: |
+      npm config set registry https://registry.npmjs.org
+      npm set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
+      if [ "${{ github.event.release.prerelease }}" = "false" ]; then
+        pnpm publish --access public --no-git-checks --provenance
+      else
+        pnpm publish --access public --no-git-checks --provenance --tag next
+      fi

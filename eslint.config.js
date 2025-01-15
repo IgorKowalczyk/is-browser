@@ -1,8 +1,9 @@
-import eslintConfig from "@igorkowalczyk/eslint-config/flat";
+import eslintConfig from "@igorkowalczyk/eslint-config";
 
 export default [
- ...eslintConfig,
- {
-  ignores: ["dist/**/*"],
- },
+ // prettier
+ ...eslintConfig.base,
+ ...eslintConfig.node,
+ //...eslintConfig.typescript,
+ ...eslintConfig.prettier,
 ];

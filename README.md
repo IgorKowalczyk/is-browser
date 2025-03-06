@@ -16,7 +16,7 @@
 
 ## 📥 Installation
 
-**Tailwind.css v3 or newer is required**.
+Install the package using your package manager of choice. Tailwind CSS v3 and v4 are supported.
 
 ```
 npm install @igorkowalczyk/is-browser
@@ -26,7 +26,20 @@ pnpm add @igorkowalczyk/is-browser
 
 ## 📦 Usage
 
-Add to `plugins` in your **tailwind.config.js**:
+### Tailwind CSS v4
+
+Import the plugin in your CSS file.
+
+```css
+@import "tailwindcss";
+@plugin "@igorkowalczyk/is-browser";
+```
+
+That's it! You can now use the plugin in your components.
+
+### Tailwind CSS v3
+
+Add to `plugins` in your `tailwind.config.js`.
 
 ```js
 module.exports = {
@@ -37,6 +50,8 @@ module.exports = {
  ],
 };
 ```
+
+## 🎨 Examples
 
 Style your components using `{browser_name}:{class}`, e.g. `firefox:bg-red-100`, `chrome:bg-blue-100`, etc.
 

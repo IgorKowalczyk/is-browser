@@ -4,6 +4,6 @@ export default [
  // prettier
  ...eslintConfig.base,
  ...eslintConfig.node,
- //...eslintConfig.typescript,
+ ...eslintConfig.typescript,
  ...eslintConfig.prettier,
 ];

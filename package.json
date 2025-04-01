@@ -34,8 +34,8 @@
     "eslint": "9.23.0",
     "prettier": "3.5.3",
     "rimraf": "6.0.1",
-    "rollup": "4.37.0",
-    "tailwindcss": "4.0.15",
+    "rollup": "4.38.0",
+    "tailwindcss": "4.0.17",
     "typescript": "5.8.2"
   },
   "peerDependencies": {

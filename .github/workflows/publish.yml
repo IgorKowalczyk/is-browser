@@ -24,7 +24,6 @@ jobs:
    - name: 🔩 Setup PNPM
      uses: pnpm/action-setup@v3
      with:
-      version: next-9
       standalone: true
 
    # Setup Node.js

@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@igorkowalczyk/eslint-config": "3.0.7",
-    "@igorkowalczyk/prettier-config": "3.0.7",
+    "@igorkowalczyk/prettier-config": "3.0.8",
     "@rollup/plugin-node-resolve": "16.0.1",
     "@rollup/plugin-typescript": "12.1.2",
     "eslint": "9.25.1",

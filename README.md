@@ -43,11 +43,11 @@ Add to `plugins` in your `tailwind.config.js`.
 
 ```js
 module.exports = {
- // ...
- plugins: [
-  require("@igorkowalczyk/is-browser"),
-  // ...other plugins.
- ],
+  // ...
+  plugins: [
+    require("@igorkowalczyk/is-browser"),
+    // ...other plugins.
+  ],
 };
 ```
 
@@ -57,7 +57,7 @@ Style your components using `{browser_name}:{class}`, e.g. `firefox:bg-red-100`,
 
 ```jsx
 <div className="firefox:bg-red-400 chrome:bg-blue-400 bg-yellow-400">
- <p>On firefox background should be red, on chrome should be blue and on other browsers it should be yellow</p>
+  <p>On firefox background should be red, on chrome should be blue and on other browsers it should be yellow</p>
 </div>
 ```
 

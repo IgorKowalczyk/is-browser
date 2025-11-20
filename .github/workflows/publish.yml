@@ -18,7 +18,7 @@ jobs:
     steps:
       # Checkout the repository
       - name: 🧱 Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       # Setup PNPM
       - name: 🔩 Setup PNPM

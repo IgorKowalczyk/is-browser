@@ -18,7 +18,7 @@ jobs:
     steps:
       # Checkout the repository
       - name: 🧱 Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       # Setup PNPM
       - name: 🔩 Setup PNPM
@@ -28,40 +28,36 @@ jobs:
 
       # Setup Node.js
       - name: 🔩 Setup Node ${{ matrix.node }}
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v6
         with:
           node-version: ${{ matrix.node }}
-          always-auth: true
           cache: "pnpm"
+          registry-url: "https://registry.npmjs.org"
 
       # Install dependencies
       - name: 🚀 Install dependencies
         run: pnpm install
 
-        # Build the project
+      # Build the project
       - name: 🛠️ Build packages
         run: pnpm build
 
-      # Publish to GitHub Package Registry
-      - name: 📦 Publish to GitHub Package Registry
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GH_TOKEN }}
+      # Publish to NPM Registry
+      - name: 📦 Publish to NPM Registry
         run: |
-          npm config set registry https://npm.pkg.github.com
-          npm set //npm.pkg.github.com/:_authToken ${{ secrets.GH_TOKEN }}
           if [ "${{ github.event.release.prerelease }}" = "false" ]; then
             pnpm publish --access public --no-git-checks --provenance
           else
             pnpm publish --access public --no-git-checks --provenance --tag next
           fi
 
-      # Publish to NPM Registry
-      - name: 📦 Publish to NPM Registry
+      # Publish to GitHub Package Registry
+      - name: 📦 Publish to GitHub Package Registry
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          npm config set registry https://registry.npmjs.org
-          npm set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
+          npm config set registry https://npm.pkg.github.com
+          npm set //npm.pkg.github.com/:_authToken ${{ secrets.GITHUB_TOKEN }}
           if [ "${{ github.event.release.prerelease }}" = "false" ]; then
             pnpm publish --access public --no-git-checks --provenance
           else

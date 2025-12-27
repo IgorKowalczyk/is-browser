@@ -1,7 +1,7 @@
 {
   "name": "@igorkowalczyk/is-browser",
   "description": "🏔️ Add support for browser specific variants in Tailwind.css",
-  "version": "5.1.0",
+  "version": "5.1.1",
   "author": "Igor Kowalczyk",
   "license": "MIT",
   "sideEffects": false,
@@ -27,17 +27,17 @@
     "types": "./dist/index.d.ts"
   },
   "devDependencies": {
-    "@igorkowalczyk/eslint-config": "3.2.1",
-    "@igorkowalczyk/prettier-config": "3.2.1",
-    "@rollup/plugin-node-resolve": "16.0.3",
-    "@rollup/plugin-typescript": "12.3.0",
-    "eslint": "9.39.1",
-    "prettier": "3.6.2",
-    "rimraf": "6.1.0",
-    "rollup": "4.53.2",
-    "tailwindcss": "4.1.17",
-    "tslib": "2.8.1",
-    "typescript": "5.9.3"
+    "@igorkowalczyk/eslint-config": "^3.2.1",
+    "@igorkowalczyk/prettier-config": "^3.2.1",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-typescript": "^12.3.0",
+    "eslint": "^9.39.2",
+    "prettier": "^3.7.4",
+    "rimraf": "^6.1.2",
+    "rollup": "^4.54.0",
+    "tailwindcss": "^4.1.18",
+    "tslib": "^2.8.1",
+    "typescript": "^5.9.3"
   },
   "peerDependencies": {
     "tailwindcss": ">=3.0.0 || >=4.0.0"

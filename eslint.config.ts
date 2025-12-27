@@ -4,10 +4,10 @@ import prettierConfig from "@igorkowalczyk/eslint-config/prettier";
 import typescriptConfig from "@igorkowalczyk/eslint-config/typescript";
 import { defineConfig } from "eslint/config";
 
-export default defineConfig(
+export default defineConfig([
   //
-  ...baseConfig,
-  ...nodeConfig,
-  ...typescriptConfig,
-  ...prettierConfig
-);
+  baseConfig,
+  nodeConfig,
+  typescriptConfig,
+  prettierConfig,
+]);
